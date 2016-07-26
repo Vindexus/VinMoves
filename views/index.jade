@@ -1,0 +1,36 @@
+extends layout
+
+block content
+  .container
+    h1= title
+    each move in movesList
+      .move.panel.panel-default(id="#{move.key}")
+        .panel-heading
+          h3.panel-title= move.name
+          .author
+            | by 
+            if move.authorUrl
+              a(href="#{move.authorUrl}")= move.author
+            else
+              = move.author
+        .panel-body
+          .row
+            .description.col-md-9!= move.description
+            ul.nav.nav-pills.nav-pills-stacked.col-md-3
+              li
+                a.btn.btn-default(href="#") 
+                  span.glyphicon.glyphicon-edit
+                  |  Edit This Move
+              li
+                a.btn.btn-default(href="#") 
+                  span.glyphicon.glyphicon-edit
+                  |  Read the Blog Post
+              li
+                a.btn.btn-default(href="#") 
+                  span.glyphicon.glyphicon-edit
+                  |  Edit This Move
+        if move.flavor
+          .panel-footer.flavor!= move.flavor
+
+
+
