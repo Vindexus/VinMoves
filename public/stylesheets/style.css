@@ -10,4 +10,47 @@
 
 .move .nav >  li > a {
   padding: 8px 10px;
+  margin: 0 0 5px 0;
+  text-align: left;
+}
+
+.move h3 {
+  font-size: 22px;
+  line-height: 22px
+}
+
+.move h3 .author {
+  font-size: 14px;
+  line-height: 22px;
+  vertical-align: bottom;
+}
+
+.move h3 .author:before {
+  content: " ";
+}
+
+.move .panel-heading {
+  overflow: auto;
+}
+
+.flavor blockquote {
+  border: none;
+  font-size: 16px;
+  margin: 0 0 0 0;
+  padding: 10px 15px;
+  font-family: serif;
+  color: #333;
+  font-style: italic;
+}
+
+.flavor blockquote:before {
+  content: open-quote;
+  font-size: 1.3em;
+}
+.flavor blockquote:after {
+  content: close-quote;
+  font-size: 1.3em;
+}
+.content {
+  padding-top: 50px;
 }

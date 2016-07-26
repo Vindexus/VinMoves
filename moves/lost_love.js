@@ -9,6 +9,6 @@ module.exports = {
   '</ul>'+
   '<p>Take +1 forward when using this information with this foe.</p>',
   releaseDate: '2016-08-02',
-  author: 'Colin "Vindexus" Kierans',
+  author: 'Vindexus',
   authorUrl: 'http://vindexus.net'
 }

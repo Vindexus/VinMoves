@@ -15,9 +15,10 @@ for(var i in files) {
 
   var path = './' + file;
 
-  console.log('path', path);
   movesAtlas[key] = require(path);
   movesAtlas[key].key = key;
+  movesAtlas[key].urls = movesAtlas[key].urls || {}
+  movesAtlas[key].urls.edit = 'https://github.com/Vindexus/VinMoves/edit/master/moves/' + key + '.js';
   movesList.push(movesAtlas[key]);
 }
 

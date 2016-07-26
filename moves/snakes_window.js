@@ -4,5 +4,6 @@ module.exports = {
   'until someone else rolls double 1s, it knows what you\'re going to do almost before you do.</p>',
   releaseDate: '2016-08-02',
   author: 'Colin "Vindexus" Kierans',
-  authorUrl: 'http://vindexus.net'
+  authorUrl: 'http://vindexus.net',
+  flavor: "The eyes are the gates of the mind, and you have left yours unbarred and unguarded."
 }
