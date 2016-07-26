@@ -8,6 +8,7 @@ module.exports = {
     '<li>You know who was responsible, the GM will tell you who</li>'+
   '</ul>'+
   '<p>Take +1 forward when using this information with this foe.</p>',
+  flavor: "Tis better to have lost and avenged than to never have loved at all.",
   releaseDate: '2016-08-02',
   author: 'Vindexus',
   authorUrl: 'http://vindexus.net'

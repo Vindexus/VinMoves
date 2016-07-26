@@ -5,5 +5,5 @@ module.exports = {
   releaseDate: '2016-08-02',
   author: 'Colin "Vindexus" Kierans',
   authorUrl: 'http://vindexus.net',
-  flavor: "The eyes are the gates of the mind, and you have left yours unbarred and unguarded."
+  flavor: "The eyes are the gates of the mind, and you have left yours open."
 }
