@@ -9,7 +9,7 @@ module.exports = {
   '</ul>'+
   '<p>Take +1 forward when using this information with this foe.</p>',
   flavor: "Tis better to have lost and avenged than to never have loved at all.",
-  releaseDate: '2016-08-02',
+  releaseDate: '2016-08-03',
   author: 'Vindexus',
   authorUrl: 'http://vindexus.net'
 }

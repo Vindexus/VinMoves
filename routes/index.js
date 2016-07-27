@@ -24,9 +24,19 @@ router.get('/move/:id', function(req, res, next) {
   });  
 });
 
+router.get('/', function(req, res, next) {
+  var move = movesAtlas[req.params.id]
+  res.render('index', { 
+    title: 'Custom Dungeon World Moves for Enemies and Monsters', 
+    movesAtlas: movesAtlas, 
+    movesList: [move],
+    activePage: false
+  });  
+});
+
 
 /* GET home page. */
-router.get('/:page?', function(req, res, next) {
+router.get('/:page', function(req, res, next) {
   var pages = {
     newest: {
       field: 'releaseDate', 
@@ -63,7 +73,7 @@ router.get('/:page?', function(req, res, next) {
       return (a[by] > b[by] ? 1 : -1) * order;
     })    
   }
-  res.render('index', { 
+  res.render('moves', { 
     title: page.title, 
     movesAtlas: movesAtlas, 
     movesList: movesList,

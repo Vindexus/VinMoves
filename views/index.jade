@@ -2,33 +2,42 @@ extends layout
 
 block content
   .container
-    h1= title
-    each move in movesList
-      .move.panel.panel-default(id="#{move.key}")
-        .panel-heading
-          h3.panel-title
-            a(href="/move/#{move.key}").move-name= move.name
-            span.author
-              | by 
-              if move.authorUrl
-                a(href="#{move.authorUrl}")= move.author
-              else
-                = move.author
-        .panel-body
-          .row
-            .description.col-md-9
-              != move.description
-              if move.flavor
-                .flavor
-                  blockquote
-                    != move.flavor
+    .row
+      .col-lg-10
+        h1 Vin Moves
+        blockquote.tagline 
+          strong Custom moves for Dungeon World enemies and monsters to make them more interesting and more dangerous.
 
+        p This is a project that I, Colin "Vindexus" Kierans, am working on to deliver 30 custom moves for Dungeon World. I plan to prewrite several moves, then release 20 custom moves over 4 weeks, releasing one per weekday, along with an accompanying post on 
+          a(href='http://vindexus.net') my blog
+          | explaining my thought process and potential changes.
 
-            ul.nav.nav-pills.nav-pills-stacked.col-md-3
-              if move.urls.edit
-              li
-                a.btn.btn-default(href="#{move.urls.edit}" target="_blank") 
-                  span.glyphicon.glyphicon-edit
-                  |  Edit This Move
-  
+        hr
+
+        h2(id="how-to") How To Use These Moves
+        ul
+          li Think of the enemy or foe you want to apply a custom move to
+          li Find a custom that you think fits them thematically
+          li Familiarize yourself with the trigger, to increase the chances it will see play
+          li Print off or right down that custom move
+          li When playing, place it face down on the table when you feel it might trigger
+          li If the move comes into, flip it over and have one of the players read it
+          li 
+            em FULL PARTY WIPE
+
+        hr
+
+        h3(id="edit") Edit These Moves
+        p If you'd like to suggest a change for a move, you can click the <em>Edit This Move</em> link in each one to create a pull request on GitHub. The full website repo can be found
+          a(href="#") here
+          | and the files for each move are 
+          a(href='#') in the moves folder.
+
+        hr
+
+        h3(id="license") License
+        p All moves are licensed under the 
+          a(href='https://creativecommons.org/licenses/by/3.0/' target="_blank")
+            | Creative Commons Attribution 3.0 Unported License
+          |.
 
