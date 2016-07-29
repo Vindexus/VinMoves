@@ -7,7 +7,7 @@ module.exports = {
     '<li>It burns in your body, take 1d6 damage ignoring armor</li>'+
     '<li>The pain shakes your focus, take -1 forward</li>' +
   '</ul>',
-  releaseDate: '2016-08-01',
+  releaseDate: '2016-08-02',
   author: 'Colin "Vindexus" Kierans',
   authorUrl: 'http://vindexus.net'
 }
