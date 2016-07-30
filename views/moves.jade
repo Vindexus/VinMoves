@@ -3,33 +3,46 @@ extends layout
 block content
   .container
     h1= title
+    if movesList.length == 0
+      p No moves found.
     each move in movesList
-      .move.panel.panel-default(id="#{move.key}")
-        .panel-heading
-          h3.panel-title
-            a(href="/move/#{move.key}").move-name= move.name
-            span.author
-              | by 
-              if move.authorUrl
-                a(href="#{move.authorUrl}")= move.author
-              else
-                = move.author
-                
-        .panel-body
-          .row
-            .description.col-md-9
-              != move.description
-              if move.flavor
-                .flavor
-                  blockquote
-                    != move.flavor
+      if !move.isReleased
+        p This move hasn't been released yet.
+      else
+        .move.panel.panel-default(id="#{move.key}")
+          .panel-heading
+            h3.panel-title(title="#{move.releaseDate}")
+              a(href="/move/#{move.key}").move-name= move.name
+              span.author
+                | by 
+                if move.authorUrl
+                  a(href="#{move.authorUrl}")= move.author
+                else
+                  = move.author
+                  
+          .panel-body
+            .row
+              .description.col-md-9
+                != move.description
+                if move.flavor
+                  .flavor
+                    blockquote
+                      != move.flavor
 
 
-            ul.nav.nav-pills.nav-pills-stacked.col-md-3
-              if move.urls.edit
-              li
-                a.btn.btn-default(href="#{move.urls.edit}" target="_blank") 
-                  span.glyphicon.glyphicon-edit
-                  |  Edit This Move
-  
+              .col-md-3
+                ul.nav.nav-pills.nav-pills-stacked
+                  if move.urls.edit
+                    li
+                      a.btn.btn-default(href="#{move.urls.edit}" target="_blank") 
+                        span.glyphicon.glyphicon-edit
+                        |  Edit This Move
+                  if move.urls.blogPost
+                    li
+                      a.btn.btn-default(href="#{move.urls.blogPost}" target="_blank") 
+                        span.glyphicon.glyphicon-eye-open
+                        |  Read the Blog Post
+
+                p.release-date Released #{move.releaseDate}
+      
 

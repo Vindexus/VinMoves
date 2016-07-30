@@ -16,7 +16,7 @@ function shuffle(a) {
 
 router.get('/move/:id', function(req, res, next) {
   var move = movesAtlas[req.params.id]
-  res.render('index', { 
+  res.render('moves', { 
     title: move.name + ' by ' + move.author, 
     movesAtlas: movesAtlas, 
     movesList: [move],
@@ -40,12 +40,12 @@ router.get('/:page', function(req, res, next) {
   var pages = {
     newest: {
       field: 'releaseDate', 
-      order: 1,
+      order: -1,
       title: 'Newest Moves'
     },
     oldest: {
       field: 'releaseDate',
-      order: -1,
+      order: 1,
       title: 'Oldest Moves'
     },
     'author': {
@@ -60,13 +60,16 @@ router.get('/:page', function(req, res, next) {
   var activePage = req.params.page || 'newest'
   var page =  pages[activePage]
   var by = page.field
-
   var order = page.order
+  var filteredList = movesList.filter(function (m) {
+    return m.isReleased
+  });
+
   if(activePage == 'random') {
-    shuffle(movesList);
+    shuffle(filteredList);
   }
   else {
-    movesList = movesList.sort(function (a, b) {
+    filteredList = filteredList.sort(function (a, b) {
       if(a[by] == b[by]) {
         return 0
       }
@@ -76,7 +79,7 @@ router.get('/:page', function(req, res, next) {
   res.render('moves', { 
     title: page.title, 
     movesAtlas: movesAtlas, 
-    movesList: movesList,
+    movesList: filteredList,
     activePage: activePage
   });
 });
