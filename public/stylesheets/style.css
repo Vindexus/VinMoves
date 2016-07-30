@@ -6,6 +6,7 @@
 
 .move .nav-pills li {
   float: none;
+  margin-left: 0px;
 }
 
 .move .nav >  li > a {
@@ -31,6 +32,12 @@
 
 .move .panel-heading {
   overflow: auto;
+}
+
+.move .release-date {
+  font-size: 0.9em;
+  padding-left: 5px;
+  padding-top: 5px;
 }
 
 .flavor blockquote {
