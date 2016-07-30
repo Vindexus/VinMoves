@@ -18,16 +18,16 @@ for(var i in files) {
   var move = require(path);
   var releaseDate = new Date(move.releaseDate).getTime()
   var now = new Date().getTime()
-  now += 60 * 60 * 24 * 1000 * 6 //Let's make it the future for testing
-  console.log('releaseDate', releaseDate)
-  console.log('now', now)
-  if(now >= releaseDate) {
-    movesAtlas[key] = move
-    movesAtlas[key].key = key;
-    movesAtlas[key].urls = movesAtlas[key].urls || {}
-    movesAtlas[key].urls.edit = 'https://github.com/Vindexus/VinMoves/edit/master/moves/' + key + '.js';
-    movesList.push(movesAtlas[key]);
+  if(process.env.DAYSINFUTURE) {
+    now += 60 * 60 * 24 * 1000 * process.env.DAYSINFUTURE //Let's make it the future for testing
   }
+
+  move.isReleased = now >= releaseDate
+  move.key = key;
+  move.urls = move.urls || {}
+  move.urls.edit = 'https://github.com/Vindexus/VinMoves/edit/master/moves/' + key + '.js';
+  movesAtlas[key] = move
+  movesList.push(movesAtlas[key]);
 }
 
 module.exports = {

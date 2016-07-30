@@ -4,5 +4,8 @@ module.exports = {
   releaseDate: '2016-08-01',
   author: 'Colin "Vindexus" Kierans',
   authorUrl: 'http://vindexus.net',
-  flavor: "Your powers betray you."
+  flavor: "Your powers betray you.",
+  urls: {
+    blogPost: 'http://vindexus.net/2016/07/29/the-vin-moves-pr…rld-custom-moves/'
+  }
 };
