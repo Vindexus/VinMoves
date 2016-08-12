@@ -11,7 +11,7 @@ block content
       else
         .move.panel.panel-default(id="#{move.key}")
           .panel-heading
-            h3.panel-title(title="#{move.releaseDate}")
+            h3.panel-title
               a(href="/move/#{move.key}").move-name= move.name
               span.author
                 | by 
@@ -32,14 +32,14 @@ block content
 
               .col-md-3
                 ul.nav.nav-pills.nav-pills-stacked
-                  if move.urls.edit
+                  if move.editUrl
                     li
-                      a.btn.btn-default(href="#{move.urls.edit}" target="_blank") 
+                      a.btn.btn-default(href="#{move.editUrl}" target="_blank") 
                         span.glyphicon.glyphicon-edit
                         |  Edit This Move
-                  if move.urls.blogPost
+                  if move.blogPostUrl
                     li
-                      a.btn.btn-default(href="#{move.urls.blogPost}" target="_blank") 
+                      a.btn.btn-default(href="#{move.blogPostUrl}" target="_blank") 
                         span.glyphicon.glyphicon-eye-open
                         |  Read the Blog Post
 
