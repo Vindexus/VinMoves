@@ -32,17 +32,18 @@ block content
 
               .col-md-3
                 ul.nav.nav-pills.nav-pills-stacked
-                  if move.urls.edit
+                  if move.editUrl
                     li
-                      a.btn.btn-default(href="#{move.urls.edit}" target="_blank") 
+                      a.btn.btn-default(href="#{move.editUrl}" target="_blank") 
                         span.glyphicon.glyphicon-edit
                         |  Edit This Move
-                  if move.urls.blogPost
+                  if move.blogPostUrl
                     li
-                      a.btn.btn-default(href="#{move.urls.blogPost}" target="_blank") 
+                      a.btn.btn-default(href="#{move.blogPostUrl}" target="_blank") 
                         span.glyphicon.glyphicon-eye-open
                         |  Read the Blog Post
 
-                p.release-date Released #{move.releaseDate}
+                if move.releaseDate
+                  p.release-date Released #{move.releaseDate}
       
 

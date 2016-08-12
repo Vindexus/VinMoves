@@ -7,5 +7,4 @@ When you **roll double 1s in the le 1s in the presence of this foe** it finds an
 Relase Date: 2016-08-04 09:00 PST  
 Author: Colin "Vindexus" Kierans  
 Author URL: http://vindexus.net  
-Blog Post: http://vindexus.net/2016/07/31/snakes-window-vin-moves/  
-
+Blog Post: http://vindexus.net/2016/07/31/snakes-window-vin-moves/
