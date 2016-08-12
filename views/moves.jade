@@ -43,6 +43,7 @@ block content
                         span.glyphicon.glyphicon-eye-open
                         |  Read the Blog Post
 
-                p.release-date Released #{move.releaseDate}
+                if move.releaseDate
+                  p.release-date Released #{move.releaseDate}
       
 
