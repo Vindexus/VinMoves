@@ -4,6 +4,6 @@ When you are **the first spell-casting member of your party to use magic where t
 >Your power betrays you!
 
 ---
-Author: Colin "Vindexus" Kierans
-Author URL: http://vindexus.net
+Author: Colin "Vindexus" Kierans  
+Author URL: http://vindexus.net  
 Release Date: 2016-08-01
