@@ -1,5 +1,5 @@
 # Famous Weapon
-When your group **first hears of or sees this enemy's notorious weapon**, the party member with the most knowledge of weapons recognizes it and rolls+INT. On a 7+ choose two and describe them:
+When your group **first hears of or sees this enemy's notorious weapon**, the party member with the most knowledge of weapons knows it and rolls+INT. On a 7+ choose two and describe them:
 
  - It's said to leave lasting wounds beyond cuts and bruises
  - It crackles or shimmers with an elemental force
