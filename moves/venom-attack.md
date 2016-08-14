@@ -8,6 +8,6 @@ When you **take damage after armor from this foe for the first time**, the venom
 >Stay wary of its limbs, the green shite holds a nasty burn!
 
 ---
-Release Date: 2016-08-11
+Release Date: 2016-08-23 09:00 PST  
 Author: Colin "Vindexus" Kierans
 Author URL: http://vindexus.net
