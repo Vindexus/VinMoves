@@ -39,7 +39,7 @@ for(var i in files) {
     var parts = mp.split(': ')
     if(parts[0]) {
       var k = parts[0].toCamelCase().trim()
-      console.log(k + ': ' + parts[1])
+      //console.log(k + ': ' + parts[1])
       move[k] = parts[1]
     }
   }
@@ -54,7 +54,7 @@ for(var i in files) {
   move.description = marked(descLines.slice(1,descLines.length).join("\n").trim())
   move.flavor = flavorMD
 
-  /**/
+  /**
   console.log('descLines', descLines)
   //console.log('metaParts', metaParts)
   console.log('metaMD', metaMD)
@@ -62,6 +62,14 @@ for(var i in files) {
   /**/
   
   var releaseDate = new Date(move.releaseDate).getTime()
+
+  if(isNaN(releaseDate)) {
+    console.log('invalid date', move.releaseDate)
+    console.log('move.name', move.name)
+    console.log('----')
+    releaseDate = 0
+  }
+
   if(releaseDate > 0) {
     var now = new Date().getTime()
     if(process.env.DAYSINFUTURE) {
@@ -73,6 +81,8 @@ for(var i in files) {
     move.isReleased = true
   }
   
+  move.releaseDate = new Date(releaseDate)
+  move.releaseDateFormatted = move.releaseDate.toDateString()
   move.key = key;
   move.editUrl = 'https://github.com/Vindexus/VinMoves/edit/master/moves/' + key + '.md';
   movesAtlas[key] = move
