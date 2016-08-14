@@ -5,3 +5,4 @@ This enemy has the ability to morph spells cast in its presence. When **this foe
 Release Date: 2016-08-23 09:00 PST  
 Author: Colin "Vindexus" Kierans  
 Author URL: http://vindexus.net
+Blog Post: http://vindexus.net/2016/08/22/spellshifter/
