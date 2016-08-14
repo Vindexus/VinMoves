@@ -6,4 +6,5 @@ When you are **the first spell-casting member of your party to use magic where t
 ---
 Author: Colin "Vindexus" Kierans  
 Author URL: http://vindexus.net  
-Release Date: 2016-08-01
+Release Date: 2016-08-15 09:00:00 GMT-0700
+Blog Post: http://vindexus.net/2016/08/15/the-vin-moves-project-20-new-dungeon-world-custom-moves/

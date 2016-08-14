@@ -12,7 +12,7 @@ On a 10+ the GM will tell you what tags, bonuses, and additional effects the wea
 On a 6- the GM will choose two, but the weapon will not easily serve a new master.
 
 ---
-releaseDate: 2016-08  
+releaseDate: 2016-08-18 09:00:00 GMT-0700  
 author: Vindexus  
 authorUrl: http://vindexus.net  
 blogPost: http://vindexus.net/2016/08/18/famous-weapon

@@ -10,7 +10,7 @@ On a 7+, take +1 forward when acting on the information.
 >Tis better to have lost and avenged than to never have loved at all.
 
 ---
-releaseDate: 2016-08-16  
+releaseDate: 2016-08-16 09:00:00 GMT-0700  
 author: Vindexus  
 authorUrl: http://vindexus.net  
 blogPost: http://vindexus.net/2016/08/16/lost-love/
