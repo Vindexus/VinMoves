@@ -15,3 +15,4 @@ On a 6- the GM will choose two, but the weapon will not easily serve a new maste
 releaseDate: 2016-08  
 author: Vindexus  
 authorUrl: http://vindexus.net  
+blogPost: http://vindexus.net/2016/08/18/famous-weapon

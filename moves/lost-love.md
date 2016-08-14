@@ -13,4 +13,4 @@ On a 7+, take +1 forward when acting on the information.
 releaseDate: 2016-08-16  
 author: Vindexus  
 authorUrl: http://vindexus.net  
-blogPostUrl: http://vindexus.net/2016/08/16/lost-love/
+blogPost: http://vindexus.net/2016/08/16/lost-love/
