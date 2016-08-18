@@ -6,7 +6,7 @@ When your group **first hears of or sees this enemy's notorious weapon**, the pa
  - It is a sentient weapon with a mind of its own
  - It is holy (or corrupt)
  - It is a long lost weapon of a famous order, guild, or family
- - It was constructed using a rare and powerful material'
+ - It was constructed using a rare and powerful material
 
 On a 10+ the GM will tell you what tags, bonuses, and additional effects the weapon has.  
 On a 6- the GM will choose two, but the weapon will not easily serve a new master.
