@@ -8,7 +8,7 @@ When you **deal the final blow to this foe** it lashes out with its final breath
 
 This mark can be removed, but it’s a difficult process that is beyond the skill of most healers and magic users.
 
->You won't get far, I *will* be avenged!
+>You won't get far, I will be avenged!
 
 ---
 author: Colin "Vindexus" Kierans  
