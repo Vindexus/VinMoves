@@ -26,6 +26,12 @@ block content
 
         hr
 
+        div
+          strong Newest Move: 
+          a(href='/#{newest[0]/key}')= newest[0].name
+
+        hr
+
         h2(id="how-to") How To Use These Moves
         ul
           li Think of the enemy or foe you want to apply a custom move to

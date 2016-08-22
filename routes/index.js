@@ -1,8 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var Moves = require('../moves');
-var movesAtlas = Moves.atlas;
-var movesList = Moves.list;
+
 
 function shuffle(a) {
   var j, x, i;
@@ -14,21 +12,23 @@ function shuffle(a) {
   }
 }
 
+
 router.get('/move/:id', function(req, res, next) {
-  var move = movesAtlas[req.params.id]
+  var move = res.moves.atlas[req.params.id]
   res.render('moves', { 
     title: move.name + ' by ' + move.author, 
-    movesAtlas: movesAtlas, 
+    movesAtlas: res.moves.atlas, 
     movesList: [move],
     activePage: false
   });  
 });
 
 router.get('/', function(req, res, next) {
-  var move = movesAtlas[req.params.id]
+  var move = res.moves.atlas[req.params.id]
   res.render('index', { 
     title: 'Custom Dungeon World Moves for Enemies and Monsters', 
-    movesAtlas: movesAtlas, 
+    movesAtlas: res.moves.atlas,
+    newest: res.moves.newest,
     movesList: [move],
     activePage: false
   });  
@@ -61,7 +61,7 @@ router.get('/:page', function(req, res, next) {
   var page =  pages[activePage]
   var by = page.field
   var order = page.order
-  var filteredList = movesList.filter(function (m) {
+  var filteredList = res.moves.list.filter(function (m) {
     return m.isReleased
   });
 
@@ -78,7 +78,7 @@ router.get('/:page', function(req, res, next) {
   }
   res.render('moves', { 
     title: page.title, 
-    movesAtlas: movesAtlas, 
+    movesAtlas: res.moves.atlas, 
     movesList: filteredList,
     activePage: activePage
   });

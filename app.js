@@ -8,6 +8,26 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var app = express();
 
+
+app.use(function(req, res, next) {
+  var Moves = require('./moves');
+  var movesAtlas = Moves.atlas;
+  var movesList = Moves.list;
+  res.moves = Moves
+  res.moves.released = res.moves.list.filter(function (m) {
+    return m.isReleased
+  });
+  res.moves.newest = res.moves.list.sort(function (a, b) {
+    var by = 'releaseDate'
+    var order = 1
+    if(a[by] == b[by]) {
+      return 0
+    }
+    return (a[by] > b[by] ? 1 : -1) * order;
+  })    
+  next()
+});
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
