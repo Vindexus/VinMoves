@@ -19,7 +19,7 @@ app.use(function(req, res, next) {
   });
   res.moves.newest = res.moves.list.sort(function (a, b) {
     var by = 'releaseDate'
-    var order = 1
+    var order = -1
     if(a[by] == b[by]) {
       return 0
     }

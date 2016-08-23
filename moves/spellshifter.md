@@ -4,7 +4,7 @@ This enemy has the ability to morph spells cast in its presence. When **this foe
 >Shift and shimmer, twist and turn, bless your friend and your friend might burn!
 
 ---
-Release Date: 2016-08-23 08:00 PST  
+Release Date: 2016-08-22 08:00 PST  
 Author: Colin "Vindexus" Kierans  
 Author URL: http://vindexus.net  
 Blog Post: http://vindexus.net/2016/08/22/spellshifter/

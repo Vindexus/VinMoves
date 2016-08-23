@@ -13,5 +13,5 @@ This mark can be removed, but it’s a difficult process that is beyond the skil
 ---
 author: Colin "Vindexus" Kierans  
 authorUrl: http://vindexus.net  
-releaseDate: 2016-08-24 09:00:00 GMT-0800  
+releaseDate: 2016-08-23 08:00:00 GMT-0800  
 blogPost: http://vindexus.net/2016/08/24/marked-for-vengeance/
