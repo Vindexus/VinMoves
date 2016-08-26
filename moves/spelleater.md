@@ -7,8 +7,8 @@ When this foe **feeds off the energy created when you cast a spell**, it opens i
  - The power is redirected to two allies you name, they take 2d4 damage ignoring armor
  - You forget the spell
 
- ---
- Author: Colin "Vindexus" Kierans  
- Blog Post: http://vindexus.net/2016/08/26/spelleater/  
- Release Date: 2016-08-26 08:00 GMT-0800  
- Author URL: http://vindexus.net
+---
+Author: Colin "Vindexus" Kierans  
+Blog Post: http://vindexus.net/2016/08/26/spelleater/  
+Release Date: 2016-08-26 08:00 GMT-0800  
+Author URL: http://vindexus.net
