@@ -6,5 +6,5 @@ When this enemy first feels itself threatened it creates two near-identical copi
 ---
 Author: Colin "Vindexus" Kierans  
 Author URL: http://vindexus.net  
-Release Date: 2016-08-31 08:00 GMT-0800  
+Release Date: 2016-08-30 08:00 GMT-0800  
 Blog Post: http://vindexus.net/2016/08/31/illusionary-defense/
