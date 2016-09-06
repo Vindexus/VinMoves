@@ -84,7 +84,7 @@ for(var i in files) {
   move.releaseDate = new Date(releaseDate)
   move.releaseDateFormatted = move.releaseDate.toDateString()
   move.key = key;
-  move.editUrl = 'https://github.com/Vindexus/VinMoves/edit/master/moves/' + key + '.md';
+  move.gitHubUrl = 'https://github.com/Vindexus/VinMoves/blob/master/moves/' + key + '.md';
   movesAtlas[key] = move
   movesList.push(movesAtlas[key]);
 }

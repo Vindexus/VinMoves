@@ -33,11 +33,11 @@ block content
 
               .col-md-3
                 ul.nav.nav-pills.nav-pills-stacked
-                  if move.editUrl
+                  if move.gitHubUrl
                     li
-                      a.btn.btn-default(href="#{move.editUrl}" target="_blank") 
+                      a.btn.btn-default(href="#{move.gitHubUrl}" target="_blank") 
                         span.glyphicon.glyphicon-edit
-                        |  Edit This Move
+                        |  View on GitHub
                   if move.blogPost
                     li
                       a.btn.btn-default(href="#{move.blogPost}" target="_blank") 
