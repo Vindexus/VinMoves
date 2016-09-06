@@ -10,4 +10,5 @@ While in the presence of this enemy, **every time you get a 6 on a die while rol
 ---
 Author: Colin "Vindexus" Kierans  
 Author Url: http://vindexus.net  
-Release Date: 2016-09-05 10:00 GMT-0800
+Release Date: 2016-09-05 10:00 GMT-0800  
+Blog Post: http://vindexus.net/2016/09/05/volatile-growths/
