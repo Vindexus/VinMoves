@@ -1,5 +1,5 @@
 # Evil Lair
-When you **set out to learn about this enemys’s lair**, describe how and roll+STAT. On a 10+ choose 3, on a 7-9 choose 1.
+When you **set out to learn about this enemy’s lair**, describe how and roll+STAT. On a 10+ choose 3, on a 7-9 choose 1.
 
  - You learn the location of its secret entrance
  - You know what monsters protect it and their stats
