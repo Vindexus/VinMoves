@@ -4,6 +4,17 @@
     }
 }
 
+a.hello-bar {
+  display: block;
+  padding: 5px 0;
+  color: #fff;
+  background: #eb593c;
+  text-align: center;
+  border-bottom: 3px solid #eee;
+  box-shadow:0 1px 5px rgba(0,0,0,.7);
+  margin-bottom: 3px;
+}
+
 .move .nav-pills li {
   float: none;
   margin-left: 0px;
@@ -59,5 +70,5 @@
   font-size: 1.3em;
 }
 .content {
-  padding-top: 50px;
+  padding-top: 80px;
 }
