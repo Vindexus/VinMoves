@@ -1,9 +1,10 @@
-var fs              = require('fs')
+var fs     = require('fs')
+var path   = require('path')
 var marked = require('marked')
 var movesAtlas = {}
 var movesList = []
 
-var files = fs.readdirSync('./moves')
+var files = fs.readdirSync(__dirname)
 
 String.prototype.toCamelCase = function(str) {
   return this.replace(/\s(.)/g, function($1) { return $1.toUpperCase(); })
@@ -25,9 +26,9 @@ for(var i in files) {
     continue;
   }
 
-  var path = './moves/' + file;
+  var filepath = path.join(__dirname, file);
 
-  var markdown = fs.readFileSync(path, 'utf8');
+  var markdown = fs.readFileSync(filepath, 'utf8');
   var move = {}
   var parts = markdown.split('---')
   var moveMD = parts[0]
